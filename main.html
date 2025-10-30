@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Responsive Navbar</title>
+
+  <!-- Bootstrap 4.3.1 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
-</body>
+  <!-- ✅ NAVBAR START -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Sync5</a>
 
-</html>
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+
+        <!-- Bootcamps Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="bootcampsDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Bootcamps
+          </a>
+          <div class="dropdown-menu" aria-labelledby="bootcampsDropdown">
+            <a class="dropdown-item" href="#">Popular Bootcamps</a>
+            <a class="dropdown-item" href="#">Bootcamp Developers</a>
+            <a class="dropdown-item" href="#">Bootcamp Financing</a>
+            <a class="dropdown-item" href="#">Bootcamp Grads and Alumni</a>
+          </div>
+        </li>
+
+        <!-- Coding Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="codingDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Codi
